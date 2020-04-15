@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Gotu|IM+Fell+French+Canon+SC|Lobster|Oswald|Roboto+Slab&display=swap');
+
+img {
+	width: max-width;
+	height: 100%;
+}
+
+header {
+	background-color: #00bfff;
+	box-shadow: 0 0 5px 0 #00000080;
+	height: 50px;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 36;
+}
+
+#container {
+	min-height: 100vh;
+}
+
+nav {
+	/*padding: 10px auto 50px 100px;*/
+	margin: 0 auto;
+}
+
+nav>ul {
+	text-align: center;
+	padding: 0 50px 20px 100px;
+}
+
+nav>ul>li {
+	display: inline-block;
+}
+
+nav>ul>li>a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 30px 0 30px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-weight: bold;
+	font-size: 2.5vw;
+	display: inline-block;
+	font-family: 'IM Fell French Canon SC', serif;
+}
+
+nav>ul>li>a:hover {
+	color: black;
+	text-shadow: 2px 2px 2px white;
+}
+
+nav>ul>li>a:active {
+	background-color: #FF4000;
+}
+
+#container {
+	margin-top: 50px;
+}
+
+#promo {
+	width: 99%;
+	margin: 0 auto;
+}
+
+#content {
+	display: flex;
+	flex-direction: row;
+	height: 500px;
+	margin: 25px 10px 25px 10px;
+}
+
+#description {
+	width: 60%;
+}
+
+#description h2 {
+	text-align: center;
+	font-size: 3em;
+}
+
+#ads {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	font-size: 1em;
+}
+
+#ad1 {
+	height: 250px;
+}
+
+#ad2 {
+	height: 250px;
+}
+
+#ad1, #ad2 {
+	border: 2px solid black;
+	box-shadow: 0 4px 4px 0 2px #00000050;
+	padding: 10px;
+	margin: 10px;
+	background-color: #00bfff50;
+}
+
+footer {
+	display: inline-flex;
+	background-color: #00bfff;
+	font-style: italic bold;
+	text-align: center;
+	margin-top: 30px;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+/*----------------Styling for games_list.html--------------*/
+table{
+	width: auto;
+	height: auto;
+	margin: 100px auto;
+	border-collapse: collapse;
+	border: 2px solid black;
+}
+
+#games_list h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: aqua !important;
+	text-shadow: 2px 2px 3px black;
+}
+
+table td {
+	border: 2px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+table th {
+	text-align: center;
+}
+
+table tr:first-child {
+	border-bottom: 2px solid black;
+}
