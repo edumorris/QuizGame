@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh; /*vh stands for viewport height. It coresponds to 1% of height.*/
+  display: flex;
+  background-color: black;
+}
+
+.container {
+  margin: auto; /*To center it vertically and horizontally.*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 640px;
+  perspective: 1000px; /*Adds 3d effect*/
+}
+
+.card {
+  width: calc(20% - 10px); /*CSS calc function*/
+  height: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transform: scale(1); /*For click effect to work*/
+  transform-style: preserve-3d; /*Adds 3d effect*/
+  transition: transform 0.5s;
+}
+/*click effect*/
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+/*Flip effect*/
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute; /*Makes the images go on top of each other ie. front,back*/
+  border-radius: 50%;
+  background-color: #1c7ccc;
+  backface-visibility: hidden; /*Ensures back image is visible*/
+}
+
+/*To see the back image*/
+.front {
+  transform: rotateY(180deg);
+}
