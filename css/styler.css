@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Gotu|IM+Fell+French+Canon+SC|Lobster|Oswald|Roboto+Slab&display=swap');
+
+img {
+	width: max-width;
+	height: 100%;
+}
+
+header {
+	background-color: #00bfff;
+	box-shadow: 0 0 5px 0 #00000080;
+	height: 50px;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 36;
+}
+
+#container {
+	min-height: 100vh;
+}
+
+nav {
+	/*padding: 10px auto 50px 100px;*/
+	margin: 0 auto;
+}
+
+nav>ul {
+	text-align: center;
+	padding: 0 50px 20px 100px;
+}
+
+nav>ul>li {
+	display: inline-block;
+}
+
+nav>ul>li>a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 30px 0 30px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-weight: bold;
+	font-size: 2.5vw;
+	display: inline-block;
+	font-family: 'IM Fell French Canon SC', serif;
+}
+
+nav>ul>li>a:hover {
+	color: black;
+	text-shadow: 2px 2px 2px white;
+}
+
+nav>ul>li>a:active {
+	background-color: #FF4000;
+}
+
+#container {
+	margin-top: 50px;
+	min-height: 100vh;
+}
+
+#promo {
+	width: 99%;
+	margin: 0 auto;
+}
+
+#content {
+	display: flex;
+	flex-direction: row;
+	height: 500px;
+	margin: 25px 10px 25px 10px;
+}
+
+#description {
+	width: 60%;
+}
+
+#description h2 {
+	text-align: center;
+	font-size: 3em;
+}
+
+#ads {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	font-size: 1em;
+}
+
+#ad1 {
+	height: 250px;
+}
+
+#ad2 {
+	height: 250px;
+}
+
+#ad1, #ad2 {
+	border: 2px solid black;
+	box-shadow: 0 4px 4px 0 2px #00000050;
+	padding: 10px;
+	margin: 10px;
+	background-color: #00bfff80;
+}
+
+footer {
+	display: inline-flex;
+	background-color: #00bfff;
+	font-style: italic bold;
+	text-align: center;
+	margin-top: 30px;
+	bottom: 0;
+	
+	width: 100%;
+	border-top: 2px solid white;
+}
+
+/*----------------Styling for games_list.html--------------*/
+#games_list {
+	margin: 20px auto 40px auto;
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap');
+
+h2 {
+	text-align: center;
+	margin: 80px 0 0 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 0 0 5px 0 3px black;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FF4000;
+	font-weight: bolder !important;
+	font-size: 4em !important;
+	background-color: white;
+}
+
+.game-cards {
+	margin: 20px 20px 20px 20px;
+	height: 200px;
+	width: 200px;
+	border: 2px solid white;
+	box-shadow: 5px 3px 2px black;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 25px;
+	background-color: #33CCFF;
+	z-index: 20;
+}
+
+.gamecards:hover {
+	transform: scale(1.2);
+	background-color: #0040FF;
+}
+
+.game-cards h4 {
+	text-align: center;
+	height: 40%;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #ffffff50;
+	border-radius: 20px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #FF4000;
+	text-shadow: 2px 2px 2px black;
+}
+
+.game-cards p {
+	font-style: italic;
+	text-align: center;
+	height: 70%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: black;
+}
+
+.game-cards a {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap');
+.game-cards a button {
+	width: 130px;
+	font-weight: bold;
+	border-radius: 20px;
+	font-family: 'Sedgwick Ave Display', cursive;
+	color: #FF4000;
+	font-weight: bold;
+}
+
+.game-cards a button:hover {
+	transform: scale(1.2);
+}
+
+/*--------------------Smaller Screens--------------------*/
+
+@media only screen and (max-width: 980px) {
+	#content {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#description {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		padding: 15px;
+	}
+
+	#ads {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+	#games_list {
+		margin: 20px auto 40px auto;
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.game-cards {
+		width: 80%;
+		margin: 20px auto;
+	}
+
+}

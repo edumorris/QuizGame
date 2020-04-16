@@ -1,0 +1,127 @@
+body{
+    color: burlywood;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2% 1%;
+    
+    border: 2px solid brown;
+    border-radius: 2px;
+    box-shadow: -3px 5px 3px red inset;    
+}
+
+#container p{
+    font-size: large;
+    background-color:white;
+    width: fit-content;
+    font-weight: bold;
+    padding: 3px 8px;
+    color: black;
+    text-align: left;
+
+}
+
+#gamearea{
+    display: flex; 
+    width: 90%;
+    margin:auto;
+    margin-top: 4%;
+    padding: 10px 2px;
+    background-color: peru;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+#gamezone{
+    
+    text-align: left;
+    font-size: xx-large;
+    font-weight: bolder;
+    height: 100%;
+    margin-top: 7%;
+}
+
+#funbox{
+    margin: 5px auto;
+    width: 60%;
+    display: flex;    
+    justify-content: space-between;
+}
+
+#display{
+    margin: 10px auto 10px auto;
+
+    font-size: 30px; 
+    font-weight: bold;
+    color: black;    
+    
+    border-top: 2px solid  green;
+    border-bottom: 2px solid  green;
+    text-transform: capitalize;
+}
+
+input{
+    margin: 10px 5px 10px 5px;
+    width: 60%;
+    color: brown;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 7px;
+    height: 70%;
+    transform: translate(0%, -10%);
+    position: relative;
+    float: right;
+    right: 8%;
+    vertical-align: middle;
+}
+
+
+#button{
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+button{
+    background-color: burlywood;
+    width: 70%;
+    margin: auto;
+    font-size: 120%;
+    font-weight: bold;
+    color: black;
+    border-radius: 12px;
+    box-shadow: -4px 2px 3px blue;
+    
+}
+
+
+h2{
+    color: paleturquoise;
+    background-color: brown;
+
+    right: 0px;
+    width: 70%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+   
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    
+    border-bottom: 2px solid blue;    
+    text-shadow: -4px 2px 3px black;
+}

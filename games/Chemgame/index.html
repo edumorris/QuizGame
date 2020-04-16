@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Elements</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<script type = "text/javascript">
+    var elem = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen','Fluorine', 'Neon', 'Sodium', 'Magnesium', 'Aluminium', 'Silicon', 'Phosphorous', 'Sulfur', 'Chlorine', 'Argon', 'Potassium', 'Calcium'];
+    var elemname = elem[Math.floor(Math.random()*elem.length)];
+        
+    function findatomno(){
+        var game = document.getElementById('gamezone')        
+        var contentArea = document.getElementById('display');
+        
+        game.innerHTML = "What is the atomic number of:"
+	
+		contentArea.innerHTML = elemname;
+        var atomIndex = elem.indexOf(elemname);
+        var atomNo = atomIndex + 1;
+        return atomNo;                
+    }
+</script>
+<body onload="findatomno()">
+    <div id="container">
+        <h2>The Elements of the Periodic Tables</h2>
+        <p>To play, just enter the atomic number of the element displayed.</p>
+
+                    
+        <div id="gamezone">
+
+        </div>
+        <div id="gamearea">
+               
+
+            
+            <div id = "funbox">          
+               <div id="display">
+
+               </div>
+                <div id = "userinput">
+                    <input id = "answer" type ="number" name="number" placeholder="Atomic Number">
+                </div>
+                           
+            </div>
+            <div id="button">
+                <button onclick="checkatomno()">Check Answer</button>
+            </div>  
+           
+            <script type = "text/javascript"> 
+                function checkatomno(){
+                    var user_input = document.getElementById('answer');
+                    var atomnumber = findatomno();
+                                        
+                    if (user_input.value == atomnumber) {
+                        alert("Hurray! You got it right!");
+                        location.reload();
+                    } 
+                    else {
+                        var atom = elem[user_input.value];
+                        alert("Thats " + atom + " Try Again!");                            
+                    }
+                }
+                
+            </script>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
