@@ -9,17 +9,12 @@
 	<!-- Bootstrap integration -->
 	<link rel="stylesheet" type="text/css" href="css/styler.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<!--
-	<link rel="icon" href="images/icon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	-->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	
 	<script src="https://kit.fontawesome.com/a097096ef6.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
 
 </head>
-<body>
+<body style="background-color: #00bfff;">
 	<script src="js/functions.js"></script>
 	<div id="header">
 		<header>
@@ -35,57 +30,65 @@
 
 	<div id="container">
 		
-		<div id="games_list">
-		
-		<table>
-			<tbody>
-				<tr>
-					<th colspan="2" style="text-align: center"><h2>List of Available Games</h2></th>
-					<th></th>
-				</tr>
-				<tr>
-					<th>Game</th>
-					<th>Description</th>
-				</tr>
-				<tr>
-					<td><a href="games/accelerate.html">Accelerate</a></td>
-					<td class="description">See if you can stop yourself from crashing into the obstacles</td>
-				</tr>
-				<tr>
-					<td><a href="games/AtomsGame.html">Atoms Game</a></td>
-					<td class="description">Do you know your periodic table (Portuguese)</td>
-				</tr>
-				<tr>
-					<td><a href="games/GuessTheNumber.html">Guess The Number</a></td>
-					<td class="description">Follow the clues, find the number</td>
-				</tr>
-				<tr>
-					<td><a href="games/hangman.html">Hangman</a></td>
-					<td class="description">Guess The Words</td>
-				</tr>
-				<tr>
-					<td><a href="games/tic-tac-toe.html">Tic Tac Toe</a></td>
-					<td class="description">Knots and Crosses. Can you beat the Computer</td>
-				</tr>
-				<tr>
-					<td><a href="games/WorldQuiz.html">World Geography</a></td>
-					<td class="description">How well do you know the world</td>
-				</tr>
-				<tr>
-					<td><a href="games/Chemgame.html">Chemistry Game*</a></td>
-					<td class="description">Do you know your atoms?</td>
-				</tr>
-				<tr>
-					<td><a href="games/memory-game.html">Memory Game*</a></td>
-					<td class="description">Do you remember?</td>
-				</tr>
-				<tr>
-					<td><a href="#">Math Trivia*</a></td>
-					<td class="description">Can you count?</td>
-				</tr>
+		<h2><span>Available Games</span></h2>
 
-			</tbody>
-		</table>
+		<div id="games_list">
+
+			<div class="game-cards" id="game_1">
+				<h4>Guess The Number</h4>
+				<p>Follow the clues, find the number</p>
+				<a href="games/GuessTheNumber.html"><button>Play Game</button></a>
+			</div>
+
+			<div class="game-cards" id="game_2">
+				<h4>Atoms Game</h4>
+				<p>Do you know your periodic table (Portuguese)</p>
+				<a href="games/AtomsGame.html"><button>Play Game</button></a>
+			</div>
+
+			<div class="game-cards" id="game_3">
+				<h4>Accelerate</h4>
+				<p>See if you can stop yourself from crashing into the obstacles</p>
+				<a href="games/accelerate.html"><button>Play Game</button></a>
+			</div>
+
+			<div class="game-cards" id="game_4">
+				<h4>World Geography</h4>
+				<p>How well do you know the world</p>
+				<a href="games/WorldQuiz.html"><button>Play Game</button></a>
+			</div>
+
+			<div class="game-cards" id="game_5">
+				<h4>Tic Tac Toe</h4>
+				<p>Knots and Crosses. Can you beat the Computer</p>
+				<a href="games/tic-tac-toe.html"><button>Play Game</button></a>
+			</div>
+
+			<div class="game-cards" id="game_6">
+				<h4>Hangman</h4>
+				<p>Guess The Words</p>
+				<a href="games/hangman.html"><button>Play Game</button></a>
+			</div>
+
+			<div class="game-cards" id="game_7">
+				<h4>Math Trivia*</h4>
+				<p>How good are you at Maths</p>
+				<a href="games/math-trivia.html"><button>Play Game</button></a>
+			</div>
+
+			<div class="game-cards" id="game_8">
+				<h4>Memory Game*</h4>
+				<p>Do you remember?</p>
+				<a href="games/memory-game.html"><button>Play Game</button></a>
+			</div>
+
+			<div class="game-cards" id="game_9">
+				<h4>Chemistry Game*</h4>
+				<p>Do you know your atoms?</p>
+				<a href="games/Chemgame.html"><button>Play Game</button></a>
+			</div>
+
+
 		</div>				
 	</div>
 
@@ -94,3 +97,5 @@
 			&copy;no-copyright: &nbsp;&nbsp; <i>Alex, Maryann, Vivian, Morris</i>
 		</footer>
 	</div>
+</body>
+</html>
