@@ -8,7 +8,7 @@
 </head>
 
 <script type = "text/javascript">
-    var elem = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen'];
+    var elem = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen','Fluorine', 'Neon', 'Sodium', 'Magnesium', 'Aluminium', 'Silicon', 'Phosphorous', 'Sulfur', 'Chlorine', 'Argon', 'Potassium', 'Calcium'];
     var elemname = elem[Math.floor(Math.random()*elem.length)];
         
     function findatomno(){
@@ -53,14 +53,17 @@
                 function checkatomno(){
                     var user_input = document.getElementById('answer');
                     var atomnumber = findatomno();
+                                        
                     if (user_input.value == atomnumber) {
                         alert("Hurray! You got it right!");
                         location.reload();
                     } 
                     else {
-                        alert("Oops! Try Again!");                            
+                        var atom = elem[user_input.value];
+                        alert("Thats " + atom + " Try Again!");                            
                     }
                 }
+                
             </script>
             </div>
         </div>
