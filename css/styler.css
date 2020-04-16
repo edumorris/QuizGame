@@ -56,6 +56,7 @@ nav>ul>li>a:active {
 
 #container {
 	margin-top: 50px;
+	min-height: 80vh;
 }
 
 #promo {
@@ -109,7 +110,7 @@ footer {
 	text-align: center;
 	margin-top: 30px;
 	bottom: 0;
-	position: absolute;
+	position: static;
 	width: 100%;
 }
 
