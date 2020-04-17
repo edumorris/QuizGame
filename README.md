@@ -9,6 +9,7 @@ Quiz Game - Moringa Group Project
   ## Vivian Achieng
   
   ## Alex Wambugu
+    Chemistry Elements Quiz Game
   
   # Project Description
     Website to host different educational JavaScript Games
